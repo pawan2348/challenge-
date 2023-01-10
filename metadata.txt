@@ -1,0 +1,42 @@
+[ec2-user@jenkins ~]$ curl http://169.254.169.254/latest
+dynamic
+meta-data
+user-data[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$ curl http://169.254.169.254/latest/meta-data
+ami-id
+ami-launch-index
+ami-manifest-path
+block-device-mapping/
+events/
+hostname
+identity-credentials/
+instance-action
+instance-id
+instance-life-cycle
+instance-type
+local-hostname
+local-ipv4
+mac
+metrics/
+network/
+placement/
+profile
+public-hostname
+public-ipv4
+public-keys/
+reservation-id
+security-groups
+services/
+system[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$ curl http://169.254.169.254/latest/meta-data/identity-credentials/
+ec2/[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$ curl http://169.254.169.254/latest/meta-data/instance-type
+t2.micro[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$
+[ec2-user@jenkins ~]$ curl http://169.254.169.254/latest/meta-data/profile
+default-hvm[ec2-user@jenkins ~]$
