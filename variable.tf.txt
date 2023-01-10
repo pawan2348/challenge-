@@ -1,0 +1,46 @@
+[root@jenkins arch]# cat variable.tf
+variable "access_key" {
+  default = "AKIASRYPUS3KX5MKMP65"
+}
+
+variable "secret_key" {
+  default = "1UN5vfh4AAavqKOpAO2iYaPsPfILrPZuQvTk9t63"
+}
+variable "region" {
+  default = "ap-south-1"
+}
+
+
+
+variable "vpc" {
+  type    = string
+  default = "192.168.0.0/16"
+}
+
+variable "public_subnet" {
+  type    = string
+  default = "192.168.1.0/24"
+}
+variable "private_subnet" {
+  type    = string
+  default = "192.168.2.0/24"
+}
+
+variable "route" {
+  type    = string
+  default = "0.0.0.0/0"
+}
+
+variable "instance_type" {
+  type    = string
+  default = "t2.micro"
+}
+
+variable "ami" {
+  type    = string
+  default = "ami-06489866022e12a14"
+}
+
+variable "key_pair" {
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5uPO4eMsm9sI7enKJO6ivhmFHUAaftRLcpaxhIS0cLnPsiiY5P0RAY9hyauXaKO2TBVFxLtIRzgUzCbN1Jr6ssJMxMaoaJ7vAEKIP+2DPDpPflwBCJBJL2+4wdqUyEkJm60H8+dw9fjTvKU1+8nbnNXGTh/ywlElF+fiTNetq1DlEge6uyag3ZSHgZ3Q5fTcSvevtXUqf9c3VhigdnGjVq5Upoxd9kwcV2PbqI2QlmYNnjXnhizdNXHkPeO08NDlxzwJ3faiAcZZKVVzhCgq/9pvH/uQTaXjGxgiX2N1DZEtJ+Cltfxm2K9lxeNaJ+jgQYxDqTprxCn+SFSWONG3/ root@jenkins"
+}
